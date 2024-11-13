@@ -39,10 +39,10 @@ import GenericCard from "./GenericCard.vue";
 <style scoped>
 
 h1 {
-  font-family: "Anisette Std", Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  text-transform: uppercase;
+  //font-family: "Anisette Std", Helvetica, sans-serif;
+  //font-weight: bold;
+  //font-size: 2em;
+  //text-transform: uppercase;
   text-align: center;
 }
 

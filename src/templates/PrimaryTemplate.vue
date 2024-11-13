@@ -1,5 +1,7 @@
 <script setup>
 
+import ScrollingText from "../components/ScrollingText.vue";
+import Home from "../components/Home.vue";
 </script>
 
 <template>
@@ -8,26 +10,30 @@
     <header>
       <div class="hero">
         <div class="hero-nav">
-          <h1>RIOT FITNESS</h1>
+          <router-link :to="{ name: 'Home' } "><h1>RIOT FITNESS</h1></router-link>
           <span class="nav">
-            <a href="#">About</a>
+            <router-link :to="{ name: 'About' }">About</router-link>
             <a href="#">Events &amp; Classes</a>
             <a href="#">Membership</a>
           </span>
         </div>
 
         <div class="nav-header">
-          <p>Empowering women, <br/> redefining fitness</p>
+          <h2>Empowering women, <br/> redefining fitness</h2>
           <button>Book a tour</button>
         </div>
 
       </div>
     </header>
 
+    <ScrollingText></ScrollingText>
+
     <section class="main">
       <slot></slot>
     </section>
 
+
+<scrolling-text></scrolling-text>
     <footer>
       <aside>
         <div class="logo"><img src="../assets/RIOT-Logo.png" alt="RIOT-Fitness Logo"/></div>
@@ -60,9 +66,9 @@ section.primary-template {
   //padding: 1rem;
 
   h1 {
-    font-family: "Anisette Std", helvetica, sans-serif;
-    margin: 3rem 0 .5rem 0;
-    text-transform: uppercase;
+    //font-family: "Anisette Std", helvetica, sans-serif;
+    //margin: 3rem 0 .5rem 0;
+    //text-transform: uppercase;
   }
 
   a, p {
@@ -95,6 +101,9 @@ section.primary-template {
   }
 
   .nav-header {
+
+    text-align: right;
+    margin: 10px;
 
     p {
       font-size: 1.5rem;

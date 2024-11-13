@@ -71,16 +71,9 @@ section.primary-template {
     //text-transform: uppercase;
   }
 
-  a, p {
-    margin: 0;
-    font-family: "Azo Sans", Helvetica, sans-serif;
-  }
-
   a {
-    text-decoration: none;
     text-transform: uppercase;
     margin: 10px;
-    font-size: .8rem;
   }
 
   .hero {

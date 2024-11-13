@@ -18,5 +18,6 @@ defineProps({
 .generic-card {
   box-shadow: 15px 15px #272727;
   padding: 16px;
+  margin: 2rem 0 2rem 0;
 }
 </style>

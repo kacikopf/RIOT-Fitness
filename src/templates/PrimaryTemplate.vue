@@ -1,20 +1,28 @@
 <script setup>
+defineProps({
+  heroBG: {
+    type: String,
+    required: false,
+    default: 'linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("src/assets/RIOT-Fitness-Hero.jpg");'
+  }
+})
 
 import ScrollingText from "../components/ScrollingText.vue";
 import Home from "../components/Home.vue";
+import Schedule from "../components/Schedule.vue";
 </script>
 
 <template>
   <section class="primary-template">
 
     <header>
-      <div class="hero">
+      <div class="hero" :style="'background-image: ' + heroBG + ';'">
         <div class="hero-nav">
           <router-link :to="{ name: 'Home' } "><h1>RIOT FITNESS</h1></router-link>
           <span class="nav">
             <router-link :to="{ name: 'About' }">About</router-link>
-            <a href="#">Events &amp; Classes</a>
-            <a href="#">Membership</a>
+            <router-link :to="{ name: 'Schedule' }">Schedule</router-link>
+            <router-link :to="{ name: 'Membership' }">Membership</router-link>
           </span>
         </div>
 
@@ -33,14 +41,14 @@ import Home from "../components/Home.vue";
     </section>
 
 
-<scrolling-text></scrolling-text>
+    <scrolling-text></scrolling-text>
     <footer>
       <aside>
         <div class="logo"><img src="../assets/RIOT-Logo.png" alt="RIOT-Fitness Logo"/></div>
         <form class="newsletter-form">
           <input type="text" placeholder="Enter your email address">
         </form>
-        <p>Join our newsletter to stay up to date on RIOT Fitness<br/> news and events.</p>
+        <p>Join our newsletter to stay up to date on RIOT Fitness news and events.</p>
       </aside>
       <div class="nav">
         <a href="#">Careers</a>
@@ -50,9 +58,7 @@ import Home from "../components/Home.vue";
       </div>
     </footer>
     <section class="copyright">
-      <p>© 2024 RIOT FITNESS. All right reserved.</p>
-      <p>Privacy Policy</p>
-      <p>Terms of Service</p>
+      <a>©2024 RIOT FITNESS. All right reserved. Privacy Policy. Terms of Service</a>
     </section>
   </section>
 </template>
@@ -81,7 +87,7 @@ section.primary-template {
     flex-direction: column;
     justify-content: space-between;
     height: 664px;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("src/assets/RIOT-Fitness-Hero.jpg");
+    //background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("src/assets/RIOT-Fitness-Hero.jpg");
     background-size: cover;
     background-position: 20% 0;
     text-align: center;
@@ -90,6 +96,11 @@ section.primary-template {
 
     a {
       color: white;
+
+      &.router-link-active {
+        color: #f17a8e;
+        font-weight: bold;
+      }
     }
   }
 
@@ -106,12 +117,6 @@ section.primary-template {
     }
 
     button {
-      border: none;
-      font-family: "Azo Sans", Helvetica, sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding: 10px;
-      width: 200px;
       background-color: white;
     }
   }
@@ -139,31 +144,39 @@ section.primary-template {
           border: none;
           background-color: #E6E6E6;
           padding: 20px;
-          width: 400px;
+          width: 250px;
           margin-bottom: 10px;
         }
       }
 
       p {
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
         margin-bottom: 2rem;
       }
     }
 
-    a {
-      color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 5px;
+    .nav {
+      a {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+      }
     }
   }
 
   .copyright {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 7rem 1rem 7rem;
+    padding: 1rem 6.5rem 1rem 6.5rem;
+    align-content: center;
+    text-align: center;
+
+    a {
+      text-align: center;
+      text-transform: unset;
+      font-size: 10px;
+    }
   }
 
   @media screen and (width > 1000px) {
@@ -220,6 +233,10 @@ section.primary-template {
       flex-direction: row;
       justify-content: space-between;
 
+      input {
+        width: 400px;
+      }
+
       aside {
         justify-items: baseline;
       }
@@ -241,6 +258,10 @@ section.primary-template {
       .nav {
         padding: 2rem 0 2rem 0;
       }
+    }
+
+    .copyright {
+      text-align: left;
     }
   }
 }

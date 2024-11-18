@@ -40,7 +40,8 @@
   background-position: center;
   height: 50px;
   align-content: center;
-  border: solid black 1px;
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
 }
 
 .marquee {
@@ -69,12 +70,4 @@ p {
   font-weight: bold;
   color: white;
 }
-
-@media screen and (width > 1000px) {
-
-  .wrapper {
-    border: solid black 3px;
-  }
-}
-
 </style>

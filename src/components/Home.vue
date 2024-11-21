@@ -5,11 +5,12 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 import MembershipCard from "./Membership-Card.vue";
 import GenericCard from "./GenericCard.vue";
 import ScrollingText from "./ScrollingText.vue";
+import WhyRiot from "./WhyRiot.vue";
 
 </script>
 
 <template>
-  <primary-template>
+  <primary-template image="RIOT-Fitness-Hero.jpg" header="Empowering Women, <br> Redefining Fitness">
     <section class="home-guts">
       <section class="about">
         <aside class="content">
@@ -22,9 +23,12 @@ import ScrollingText from "./ScrollingText.vue";
           <img src="../assets/gym-space.jpg" alt="RIOT Gym Space"/>
         </div>
       </section>
-</section>
-      <scrolling-text></scrolling-text>
-<section class="home-guts">
+    </section>
+
+    <why-riot></why-riot>
+
+    <scrolling-text></scrolling-text>
+    <section class="home-guts">
       <h1>Join the RIOT</h1>
       <div class="membership-card">
         <generic-card>
@@ -79,13 +83,14 @@ section.about {
 
   img {
     max-width: 100%;
-    box-shadow: 15px 15px #272727;
   }
 }
 
 h1 {
   text-align: center;
 }
+
+
 
 div.membership-card {
   display: flex;
@@ -126,6 +131,8 @@ div.membership-card {
       }
     }
   }
+
+
 
   div.membership-card {
     flex-direction: row;

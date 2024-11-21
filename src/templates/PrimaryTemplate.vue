@@ -1,11 +1,16 @@
 <script setup>
 defineProps({
-  heroBG: {
-    type: String,
-    required: false,
-    default: 'linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("src/assets/RIOT-Fitness-Hero.jpg");'
-  }
-})
+      image: {
+        type: String,
+        required: true,
+      },
+
+      header: {
+        type: String,
+        required: true,
+      }
+    }
+)
 
 import ScrollingText from "../components/ScrollingText.vue";
 import Home from "../components/Home.vue";
@@ -16,7 +21,8 @@ import Schedule from "../components/Schedule.vue";
   <section class="primary-template">
 
     <header>
-      <div class="hero" :style="'background-image: ' + heroBG + ';'">
+      <div class="hero"
+           :style="'background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../src/assets/' + image + ');'">
         <div class="hero-nav">
           <router-link :to="{ name: 'Home' } "><h1>RIOT FITNESS</h1></router-link>
           <span class="nav">
@@ -27,7 +33,7 @@ import Schedule from "../components/Schedule.vue";
         </div>
 
         <div class="nav-header">
-          <h2>Empowering women, <br/> redefining fitness</h2>
+          <h2 class="header" v-html="header"></h2>
           <button>Book a tour</button>
         </div>
 
@@ -44,7 +50,7 @@ import Schedule from "../components/Schedule.vue";
     <scrolling-text></scrolling-text>
     <footer>
       <aside>
-        <div class="logo"><img src="../assets/RIOT-Logo.png" alt="RIOT-Fitness Logo"/></div>
+        <div class="logo"><img src="../assets/RIOT-Logo.svg" alt="RIOT-Fitness Logo"/></div>
         <form class="newsletter-form">
           <input type="text" placeholder="Enter your email address">
         </form>
@@ -87,12 +93,11 @@ section.primary-template {
     flex-direction: column;
     justify-content: space-between;
     height: 664px;
-    //background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("src/assets/RIOT-Fitness-Hero.jpg");
     background-size: cover;
-    background-position: 20% 0;
+    background-position: 20% 50%;
     text-align: center;
     color: white;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
 
     a {
       color: white;
@@ -105,9 +110,12 @@ section.primary-template {
   }
 
   .nav-header {
-
-    text-align: right;
+    text-align: center;
     margin: 10px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
 
     p {
       font-size: 1.5rem;
@@ -118,6 +126,7 @@ section.primary-template {
 
     button {
       background-color: white;
+      margin: 1rem;
     }
   }
 
@@ -135,6 +144,7 @@ section.primary-template {
         display: flex;
         margin: 0 auto;
         padding: 2rem 0 2rem 0;
+        box-shadow: unset;
       }
 
       .newsletter-form {
@@ -212,6 +222,11 @@ section.primary-template {
     }
 
     .nav-header {
+      text-align: right;
+
+      h2 {
+        font-size: 2rem;
+      }
 
       p {
         font-size: 2rem;
@@ -225,7 +240,6 @@ section.primary-template {
       button {
         width: 250px;
         float: right;
-        margin: 1rem;
       }
     }
 

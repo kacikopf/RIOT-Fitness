@@ -5,7 +5,7 @@ const data =
             "photo": "src/assets/simone-davis.jpg",
             "first_name": "Simone",
             "last_name": "Davis",
-            "description": "With a passion for inclusivity, Simone creates dynamic and energetic classes that focus on cardio and high-intensity interval training. As an advocate for body positivity, Simone encourages a supportive environment.",
+            "description": "With a passion for inclusivity, Simone creates dynamic and energetic classes that focus on cardio and HIIT. As an advocate for body positivity, Simone encourages a supportive environment.",
             "certification1": "Certified Personal Trainer (CPT)",
             "certification2": "Certified Group Fitness Instructor (CGFI)",
             "certification3": "High-Intensity Interval Training (HIIT) Certification"

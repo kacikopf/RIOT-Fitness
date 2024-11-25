@@ -123,17 +123,20 @@ h1 {
 div.membership-card {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   justify-content: center;
   //margin: 1rem 5rem 1rem 5rem;
 }
 
 section.trainers {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
-  overflow: scroll;
+  margin: 0 2rem 0 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  div.membership-card {
+    flex-direction: row;
+  }
 }
 
 @media screen and (width > 1000px) {
@@ -168,11 +171,15 @@ section.trainers {
     }
   }
 
-
   div.membership-card {
     flex-direction: row;
     //margin: 1rem 10rem 1rem 10rem;
     gap: 5rem;
+  }
+
+  section.trainers {
+    display: flex;
+    flex-direction: row;
   }
 }
 </style>

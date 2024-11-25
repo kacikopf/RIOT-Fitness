@@ -31,13 +31,9 @@ defineProps({
 
 <style scoped>
 section.trainer-card {
-  display: flex;
-  flex-direction: column;
-  //border: 1px solid lightgray;
-  //border-radius: 10px;
+  display: block;
   width: 100%;
-  gap: 1rem;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 2rem 0;
   align-items: center;
   text-align: center;
 
@@ -45,31 +41,29 @@ section.trainer-card {
     list-style-position: inside;
   }
 
-
   .photo {
-    height: 225px;
-    width: 450px;
 
     img {
       width: 100%;
       display: block;
       max-height: 225px;
       object-fit: cover;
-    }
-
-    div.details {
-      display: flex;
-      padding: 1rem;
-
-      p {
-        text-align: center;
-      }
+      object-position: 0 10%;
     }
   }
 
-  button {
-    background-color: #272727;
-    color: white;
+  div.details {
+    padding: 1rem;
+
+    p {
+      text-align: center;
+    }
   }
 }
+
+button {
+  background-color: #272727;
+  color: white;
+}
+
 </style>

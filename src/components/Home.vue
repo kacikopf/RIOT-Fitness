@@ -2,10 +2,13 @@
 
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
-import MembershipCard from "./Membership-Card.vue";
+import MembershipCard from "./MembershipCard.vue";
 import GenericCard from "./GenericCard.vue";
 import ScrollingText from "./ScrollingText.vue";
 import WhyRiot from "./WhyRiot.vue";
+import TrainerCard from "./TrainerCard.vue";
+import trainerData from '/src/trainer_data.js';
+
 
 </script>
 
@@ -52,14 +55,46 @@ import WhyRiot from "./WhyRiot.vue";
               membership-type="Full access to our gym spaces, priority booking, and bring a guest. Secure a <span>15% discount</span> with an annual commitment and enjoy flexibility for cancellations."/>
         </generic-card>
       </div>
+
+      <div class="membership-links">
+        <button>Learn More</button>
+        <a href="#">or <span>LEARN ABOUT OUR INCOME-ADJUSTED MEMBERSHIP</span></a>
+      </div>
+    </section>
+    <h1>Meet the Experts</h1>
+    <section class="trainers">
+      <trainer-card v-for="(trainer, index) in trainerData.data"
+                    :key="index" :trainer-info="trainer"/>
     </section>
   </primary-template>
 </template>
 
 <style scoped>
 
+button {
+  background-color: #272727;
+  color: white;
+  margin: 1rem 0 1rem 0;
+}
+
 section.home-guts {
   margin: 0 5rem 0 5rem;
+
+  .membership-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  a {
+    color: #272727;
+
+    span {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
 }
 
 section.about {
@@ -75,12 +110,6 @@ section.about {
     text-align: center;
   }
 
-  button {
-    background-color: #272727;
-    color: white;
-    margin: 1rem 0 1rem 0;
-  }
-
   img {
     max-width: 100%;
   }
@@ -91,13 +120,20 @@ h1 {
 }
 
 
-
 div.membership-card {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
   //margin: 1rem 5rem 1rem 5rem;
+}
+
+section.trainers {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  overflow: scroll;
 }
 
 @media screen and (width > 1000px) {
@@ -131,7 +167,6 @@ div.membership-card {
       }
     }
   }
-
 
 
   div.membership-card {

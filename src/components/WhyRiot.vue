@@ -49,10 +49,6 @@ section.why-riot {
   div.right-box {
     display: flex;
     flex-direction: column;
-
-    img {
-      box-shadow: -15px 15px #272727;
-    }
   }
 
   img {
@@ -60,7 +56,7 @@ section.why-riot {
   }
 
   h2 {
-    padding: 2rem 0 1rem 0;
+    padding-top: 2rem;
   }
 
   p {
@@ -92,6 +88,10 @@ section.why-riot {
       flex-direction: row-reverse;
       max-height: 300px;
       text-align: right;
+
+      img {
+        box-shadow: -15px 15px #272727;
+      }
 
       aside.right-info {
         margin: 0 5rem 0 5rem;

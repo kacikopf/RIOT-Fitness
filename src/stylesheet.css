@@ -22,8 +22,9 @@ h2 {
     font-size: 2em;
 }
 
-a, p {
+a, p, ul, ol {
     font-family: "Azo Sans", Helvetica, sans-serif;
+    margin: 1rem 0 1rem 0;
 }
 
 a {

@@ -129,8 +129,11 @@ div.membership-card {
 
 section.trainers {
   gap: 3rem;
-  justify-content: center;
-  margin: 0 2rem 0 2rem;
+  //justify-content: center;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  position: relative;
 }
 
 @media screen and (min-width: 700px) {

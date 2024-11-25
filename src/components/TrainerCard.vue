@@ -31,11 +31,14 @@ defineProps({
 
 <style scoped>
 section.trainer-card {
-  display: block;
   width: 100%;
   padding: 1rem 0 2rem 0;
   align-items: center;
   text-align: center;
+
+  p {
+    min-width: 350px;
+  }
 
   ul {
     list-style-position: inside;

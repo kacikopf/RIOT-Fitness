@@ -8,6 +8,8 @@ import ScrollingText from "./ScrollingText.vue";
 import WhyRiot from "./WhyRiot.vue";
 import TrainerCard from "./TrainerCard.vue";
 import trainerData from '/src/trainer_data.js';
+import ReviewCard from "./ReviewCard.vue";
+import reviews_data from "../reviews_data.js";
 
 
 </script>
@@ -65,6 +67,13 @@ import trainerData from '/src/trainer_data.js';
     <section class="trainers">
       <trainer-card v-for="(trainer, index) in trainerData.data"
                     :key="index" :trainer-info="trainer"/>
+    </section>
+    <scrolling-text></scrolling-text>
+    <section class="home-guts">
+      <div class="review-card">
+        <review-card v-for="(review, index) in reviews_data.data"
+                     :key="index" :review-info="review"></review-card>
+      </div>
     </section>
   </primary-template>
 </template>
@@ -136,6 +145,11 @@ section.trainers {
   position: relative;
 }
 
+div.review-card {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 700px) {
   div.membership-card {
     flex-direction: row;
@@ -183,6 +197,11 @@ section.trainers {
   section.trainers {
     display: flex;
     flex-direction: row;
+  }
+
+  div.review-card {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 </style>

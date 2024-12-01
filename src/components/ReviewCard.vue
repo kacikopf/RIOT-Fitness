@@ -14,19 +14,18 @@ defineProps({
 </script>
 
 <template>
-<generic-card>
-  <section class="review-card">
-    <aside class="image">
-      <img :src="reviewInfo.photo" :alt="reviewInfo.name"/>
-      <five-stars></five-stars>
-    </aside>
-    <div class="content">
-      <p v-html="reviewInfo.review"></p>
-      <p> {{ reviewInfo.name }}</p>
-    </div>
-  </section>
-</generic-card>
-
+  <generic-card>
+    <section class="review-card">
+      <aside class="image">
+        <img :src="reviewInfo.photo" :alt="reviewInfo.name"/>
+        <five-stars></five-stars>
+      </aside>
+      <div class="content">
+        <p v-html="reviewInfo.review"></p>
+        <p> {{ reviewInfo.name }}</p>
+      </div>
+    </section>
+  </generic-card>
 </template>
 
 <style scoped>
@@ -49,13 +48,26 @@ section.review-card {
       margin-right: 10px;
     }
   }
-  div.content{
+
+  div.content {
     display: flex;
     flex-direction: column;
 
     p {
       margin: .5rem;
     }
+
+    p span {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media screen and (width > 900px) {
+  section.review-card {
+    max-width: 650px;
   }
 }
 </style>

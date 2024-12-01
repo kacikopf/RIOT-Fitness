@@ -2,29 +2,29 @@ const data =
     [
         {
             "id": 1,
-            "photo": "src/assets/emma-w.jpg",
-            "review": "\"Joining RIOT Fitness transformed my fitness. The gym pods are my sanctuary, and the self-defense workshops have given me confidence.\"",
+            "photo": "src/assets/Reviews_Emma-W.jpg",
+            "review": "\"Joining RIOT Fitness transformed my fitness. The <span style=\"color:white;font-weight:bold\">gym pods</span> are my sanctuary, and the <span style=\"color:white;font-weight:bold\">self-defense workshops</span> have given me confidence.\"",
             "name": "Emma W."
         },
 
         {
             "id": 2,
-            "photo": "src/assets/simone-davis.jpg",
-            "review": "\"RIOT Fitness unleashed my inner strength. I love the personal training with Alexia, and the mental health workshops are transformative.\"",
+            "photo": "src/assets/Reviews_Aisha-N.jpg",
+            "review": "\"RIOT Fitness unleashed my inner strength. I love the <span style=\"color:white;font-weight:bold\">personal training</span> with Alexia, and the <span style=\"color:white;font-weight:bold\">mental health workshops</span> are transformative.\"",
             "name": "Aisha N."
         },
 
         {
             "id": 3,
-            "photo": "src/assets/simone-davis.jpg",
-            "review": "\"RIOT exceeded my expectations. The diverse events and classes keep me engaged, and the flexible cancellation policy adds peace of mind.\"",
+            "photo": "src/assets/Reviews_Sophie-P.jpg",
+            "review": "\"RIOT exceeded my expectations. The <span style=\"color:white;font-weight:bold\">diverse events and classes</span> keep me engaged, and the <span style=\"color:white;font-weight:bold\">flexible cancellation policy</span> adds peace of mind.\"",
             "name" : "-Sophie P."
         },
 
         {
             "id": 4,
-            "photo": "src/assets/simone-davis.jpg",
-            "review": "\"The Ultimate Membership at RIOT is a game-changer. The supportive community makes every visit an empowering experience.\"",
+            "photo": "src/assets/Reviews_Alex-R.jpg",
+            "review": "\"The <span style=\"color:white;font-weight:bold\">Ultimate Membership</span> at RIOT is a game-changer. The <span style=\"color:white;font-weight:bold\">supportive community</span> makes every visit an empowering experience.\"",
             "name": "-Alex R."
         }
     ]

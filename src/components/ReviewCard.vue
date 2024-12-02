@@ -4,21 +4,24 @@ import FiveStars from "./FiveStars.vue";
 import GenericCard from "./GenericCard.vue";
 
 defineProps({
-
   reviewInfo: {
     type: Object,
     required: true
+  },
+  backgroundColor: {
+    type: String,
+    required: false
   }
 })
 
 </script>
 
 <template>
-  <generic-card>
+  <generic-card :block-color="backgroundColor">
     <section class="review-card">
       <aside class="image">
         <img :src="reviewInfo.photo" :alt="reviewInfo.name"/>
-        <five-stars></five-stars>
+        <five-stars/>
       </aside>
       <div class="content">
         <p v-html="reviewInfo.review"></p>
@@ -32,6 +35,7 @@ defineProps({
 section.review-card {
   display: flex;
   flex-direction: row;
+  max-width: 400px;
 
   aside.image {
     display: flex;
@@ -64,10 +68,15 @@ section.review-card {
   }
 }
 
-
-@media screen and (width > 900px) {
+@media screen and (width > 1000px) {
   section.review-card {
-    max-width: 650px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (width > 1400px) {
+  section.review-card {
+    max-width: 500px;
   }
 }
 </style>

@@ -175,6 +175,7 @@ section.primary-template {
     button {
       background-color: white;
       margin: 1rem;
+      color: #272727;
     }
   }
 
@@ -260,7 +261,7 @@ section.primary-template {
     }
   }
 
-  @media screen and (width > 1000px) {
+  @media screen and (width > 1200px) {
 
     .hero {
       height: 850px;

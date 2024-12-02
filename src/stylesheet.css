@@ -39,7 +39,10 @@ button {
     text-transform: uppercase;
     padding: 10px;
     width: 200px;
-    transition-duration: 0.2s
+    transition-duration: 0.2s;
+    background-color: #272727;
+    color: white;
+    margin: 1rem 0 1rem 0;
 }
 
 button:hover {

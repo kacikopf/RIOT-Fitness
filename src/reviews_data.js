@@ -4,14 +4,14 @@ const data =
             "id": 1,
             "photo": "src/assets/Reviews_Emma-W.jpg",
             "review": "\"Joining RIOT Fitness transformed my fitness. The <span style=\"color:white;font-weight:bold\">gym pods</span> are my sanctuary, and the <span style=\"color:white;font-weight:bold\">self-defense workshops</span> have given me confidence.\"",
-            "name": "Emma W."
+            "name": "-Emma W."
         },
 
         {
             "id": 2,
             "photo": "src/assets/Reviews_Aisha-N.jpg",
             "review": "\"RIOT Fitness unleashed my inner strength. I love the <span style=\"color:white;font-weight:bold\">personal training</span> with Alexia, and the <span style=\"color:white;font-weight:bold\">mental health workshops</span> are transformative.\"",
-            "name": "Aisha N."
+            "name": "-Aisha N."
         },
 
         {

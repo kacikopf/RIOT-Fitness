@@ -36,6 +36,10 @@ section.trainer-card {
   align-items: center;
   text-align: center;
 
+  a, h1, p {
+    color: #272727;
+  }
+
   p {
     min-width: 350px;
   }

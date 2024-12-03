@@ -2,6 +2,7 @@
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 import AboutAbout from "./AboutAbout.vue";
+import AboutDetails from "./AboutDetails.vue";
 
 </script>
 
@@ -10,6 +11,7 @@ import AboutAbout from "./AboutAbout.vue";
     <section class="page-guts">
       <about-about/>
     </section>
+    <about-details/>
   </primary-template>
 </template>
 

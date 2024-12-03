@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-size: 1rem
+    /*font-size: 1rem*/
 }
 
 h1, h2, a, p, li, ol, ul {
@@ -11,7 +11,8 @@ h1 {
     font-family: "Anisette Std", Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2em;
+    /*font-size: 2em;*/
+    font-size: clamp(1em, 5vw, 2em);
     margin: 1rem 0 1rem 0;
 }
 
@@ -19,7 +20,7 @@ h2 {
     font-family: "Azo Sans", Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: clamp(1em, 5vw, 2em);
 }
 
 a, p, ul, ol {
@@ -27,9 +28,10 @@ a, p, ul, ol {
     margin: 1rem 0 1rem 0;
 }
 
-a {
+a, p {
     text-decoration: none;
-    font-size: .8rem;
+    font-size: clamp(12px, 5vw, 14px);
+
 }
 
 button {

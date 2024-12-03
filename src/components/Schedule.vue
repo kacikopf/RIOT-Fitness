@@ -1,14 +1,19 @@
 <script setup>
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
+import ScheduleLayout from "./ScheduleLayout.vue";
 </script>
 
 <template>
 <primary-template image="Schedule-Header.jpg" header="Move, Learn, Connect: <br> Fitness and Wellness">
-  <a>This is the schedule page</a>
+  <section class="page-guts">
+    <schedule-layout></schedule-layout>
+  </section>
 </primary-template>
 </template>
 
 <style scoped>
-
+section.page-guts {
+  margin: 0 3rem 0 3rem;
+}
 </style>

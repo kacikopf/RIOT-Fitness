@@ -16,4 +16,12 @@ import ScheduleLayout from "./ScheduleLayout.vue";
 section.page-guts {
   margin: 0 3rem 0 3rem;
 }
+
+
+@media screen and (width > 1200px) {
+
+  section.page-guts {
+    margin: 2rem 5rem 2rem 5rem;
+  }
+}
 </style>

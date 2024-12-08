@@ -2,31 +2,32 @@
 
 import MembershipCard from "./MembershipCard.vue";
 import GenericCard from "./GenericCard.vue";
+import GenericCardNoWidth from "./GenericCardNoWidth.vue";
 </script>
 
 <template>
   <h1>Join the RIOT</h1>
   <div class="membership-card">
-    <generic-card>
+    <generic-card-no-width>
       <membership-card
           membership-name="Starter"
           membership-cost="<span>$29.99</span>/month<br/> or<br/> <span2>$323.89</span2><span3>/year</span3><br/> plus taxes and fees"
           membership-type="Full access to our gym spaces and basic classes. Enjoy a <span>10% discount</span> for annual payment and the flexibility to cancel or adjust your plan at any time."/>
-    </generic-card>
+    </generic-card-no-width>
 
-    <generic-card block-color="#EE3F23" style="transform: scale(1.05)">
+    <generic-card-no-width block-color="#EE3F23" style="transform: scale(1.05)">
       <membership-card
           membership-name="Empower"
           membership-cost="<span>$59.99</span>/month<br/> or<br/> <span2>$575.90</span2><span3>/year</span3><br/> plus taxes and fees"
           membership-type="Full access to our gym spaces, advanced classes, and personalized training sessions. <span>Save 20%</span> on an annual subscription and enjoy flexible cancellation."/>
-    </generic-card>
+    </generic-card-no-width>
 
-    <generic-card>
+    <generic-card-no-width>
       <membership-card
           membership-name="Ultimate"
           membership-cost="<span>$79.99</span>/month<br/> or<br/> <span2>$815.90</span2><span3>/year</span3><br/> plus taxes and fees"
           membership-type="Full access to our gym spaces, priority booking, and bring a guest. Secure a <span>15% discount</span> with an annual commitment and enjoy flexibility for cancellations."/>
-    </generic-card>
+    </generic-card-no-width>
   </div>
   <div class="membership-links">
     <button>Learn More</button>

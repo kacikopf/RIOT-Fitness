@@ -18,6 +18,11 @@ const reviews = reviews_data.data
 </template>
 
 <style scoped>
+
+h1 {
+  text-align: center;
+}
+
 div.review-card {
   display: flex;
   //flex-direction: column;
@@ -27,14 +32,11 @@ div.review-card {
 
 @media screen and (width > 1000px) {
 
-  h1 {
-    text-align: center;
-  }
-
   div.review-card {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem 4rem;
+    width: unset;
   }
 }
 

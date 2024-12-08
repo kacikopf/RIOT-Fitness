@@ -2,6 +2,7 @@
 
 import FiveStars from "./FiveStars.vue";
 import GenericCard from "./GenericCard.vue";
+import GenericCardNoWidth from "./GenericCardNoWidth.vue";
 
 defineProps({
   reviewInfo: {
@@ -17,7 +18,7 @@ defineProps({
 </script>
 
 <template>
-  <generic-card :block-color="backgroundColor">
+  <generic-card-no-width :block-color="backgroundColor">
     <section class="review-card">
       <aside class="image">
         <img :src="reviewInfo.photo" :alt="reviewInfo.name"/>
@@ -28,7 +29,7 @@ defineProps({
         <p> {{ reviewInfo.name }}</p>
       </div>
     </section>
-  </generic-card>
+  </generic-card-no-width>
 </template>
 
 <style scoped>

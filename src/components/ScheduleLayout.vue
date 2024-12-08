@@ -173,14 +173,15 @@ import ScheduleCard from "./ScheduleCard.vue";
       </generic-card>
     </div>
   </div>
-
 </template>
 
 <style scoped>
 
+
 h1 {
   text-align: center;
 }
+
 div.schedule {
   display: flex;
   flex-direction: column;
@@ -239,6 +240,7 @@ div.schedule {
       gap: 5rem;
     }
   }
+
   div.wednesday {
     h2 {
       margin-right: unset;

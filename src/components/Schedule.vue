@@ -2,6 +2,7 @@
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 import ScheduleLayout from "./ScheduleLayout.vue";
+import EventsSection from "./EventsSection.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import ScheduleLayout from "./ScheduleLayout.vue";
   <section class="page-guts">
     <schedule-layout></schedule-layout>
   </section>
+  <events-section/>
 </primary-template>
 </template>
 

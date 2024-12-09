@@ -18,7 +18,7 @@ import SocialsSection from "../templates/SocialsSection.vue";
 </script>
 
 <template>
-  <primary-template image="RIOT-Fitness-Hero.jpg" header="Empowering Women, <br> Redefining Fitness">
+  <primary-template image="RIOT-Fitness-Hero.jpg" header="Empowering Women, <br> Redefining Fitness" button="Book a Tour">
 
     <section class="page-guts">
       <home-about/>

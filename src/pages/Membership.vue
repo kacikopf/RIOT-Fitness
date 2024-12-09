@@ -7,7 +7,7 @@ import FlexFitAbout from "../templates/FlexFitAbout.vue";
 </script>
 
 <template>
-<primary-template image="Membership-Header.jpg" header="Flexible Plans, Accessible <br> Fitness for All">
+<primary-template image="Membership-Header.jpg" header="Flexible Plans, Accessible <br> Fitness for All" button="Book a Tour">
   <section class="page-guts">
     <membership-info-section/>
     <flex-fit-membership/>

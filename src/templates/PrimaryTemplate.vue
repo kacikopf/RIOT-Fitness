@@ -8,6 +8,11 @@ defineProps({
       header: {
         type: String,
         required: true,
+      },
+
+      button: {
+        type: String,
+        required: true,
       }
     }
 )
@@ -29,12 +34,13 @@ import Schedule from "../pages/Schedule.vue";
             <router-link :to="{ name: 'About' }">About</router-link>
             <router-link :to="{ name: 'Schedule' }">Schedule</router-link>
             <router-link :to="{ name: 'Membership' }">Membership</router-link>
+            <router-link :to="{name: 'Contact'}">Contact</router-link>
           </span>
         </div>
 
         <div class="nav-header">
           <h2 class="header" v-html="header"></h2>
-          <button>Book a tour</button>
+          <button class="button" v-html="button"></button>
         </div>
 
       </div>

@@ -6,7 +6,7 @@ import EventsSection from "../templates/EventsSection.vue";
 </script>
 
 <template>
-<primary-template image="Schedule-Header.jpg" header="Move, Learn, Connect: <br> Fitness and Wellness">
+<primary-template image="Schedule-Header.jpg" header="Move, Learn, Connect: <br> Fitness and Wellness" button="Book a Tour">
   <section class="page-guts">
     <schedule-layout></schedule-layout>
   </section>

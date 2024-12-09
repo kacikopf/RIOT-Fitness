@@ -7,7 +7,7 @@ import AboutDetails from "../templates/AboutDetails.vue";
 </script>
 
 <template>
-  <primary-template image="About-Header.jpg" header="Our Mission: Strength, <br> Safety, and Support">
+  <primary-template image="About-Header.jpg" header="Our Mission: Strength, <br> Safety, and Support" button="Book a Tour">
     <section class="page-guts">
       <about-about/>
     </section>

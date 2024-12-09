@@ -1,8 +1,8 @@
 <script setup>
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
-import ScheduleLayout from "./ScheduleLayout.vue";
-import EventsSection from "./EventsSection.vue";
+import ScheduleLayout from "../templates/ScheduleLayout.vue";
+import EventsSection from "../templates/EventsSection.vue";
 </script>
 
 <template>

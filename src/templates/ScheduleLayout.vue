@@ -1,7 +1,7 @@
 <script setup>
 
-import GenericCard from "./GenericCard.vue";
-import ScheduleCard from "./ScheduleCard.vue";
+import GenericCard from "../components/GenericCard.vue";
+import ScheduleCard from "../components/ScheduleCard.vue";
 </script>
 
 <template>

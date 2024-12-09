@@ -1,8 +1,8 @@
 <script setup>
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
-import AboutAbout from "./AboutAbout.vue";
-import AboutDetails from "./AboutDetails.vue";
+import AboutAbout from "../templates/AboutAbout.vue";
+import AboutDetails from "../templates/AboutDetails.vue";
 
 </script>
 

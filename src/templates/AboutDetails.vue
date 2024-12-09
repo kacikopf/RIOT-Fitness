@@ -38,7 +38,7 @@
           to empower you at every level of your fitness journey. Led by experienced instructors, each class provides an
           inclusive space to grow stronger, gain confidence, and connect with a supportive community.</p>
         <router-link to="/schedule">
-        <button>Schedule</button>
+          <button>Schedule</button>
         </router-link>
       </aside>
     </div>
@@ -54,24 +54,25 @@ section.about-details {
   div.left-box {
     display: flex;
     flex-direction: column;
+
   }
 
   div.right-box {
     display: flex;
     flex-direction: column;
   }
+}
 
-  img {
-    width: 100%;
-  }
+img {
+  width: 100%;
+}
 
-  h2 {
-    padding-top: 2rem;
-  }
+h2 {
+  padding-top: 2rem;
+}
 
-  p {
-    margin-bottom: 1rem;
-  }
+p {
+  margin-bottom: 1rem;
 }
 
 @media screen and (width > 1000px) {
@@ -80,7 +81,6 @@ section.about-details {
   section.about-details {
     flex-direction: row;
     margin: 0 0 5rem 0;
-
 
     div.left-box {
       flex-direction: row;

@@ -1,20 +1,24 @@
 <script setup>
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
-import MembershipInfoSection from "./MembershipInfoSection.vue";
+import MembershipInfoSection from "../templates/MembershipInfoSection.vue";
+import FlexFitMembership from "../templates/FlexFitMembership.vue";
+import FlexFitAbout from "../templates/FlexFitAbout.vue";
 </script>
 
 <template>
 <primary-template image="Membership-Header.jpg" header="Flexible Plans, Accessible <br> Fitness for All">
   <section class="page-guts">
     <membership-info-section/>
+    <flex-fit-membership/>
   </section>
+  <flex-fit-about/>
 </primary-template>
 </template>
 
 <style scoped>
 section.page-guts {
-  margin: 0 3rem 0 3rem;
+  margin: 0 5rem 0 5rem;
   padding: 1rem 0 1rem 0;
 }
 
@@ -28,7 +32,7 @@ h1 {
 @media screen and (width > 1200px) {
 
   section.page-guts {
-    margin: 2rem 5rem 2rem 5rem;
+    margin: 2rem 10rem 2rem 10rem;
   }
 }
 </style>

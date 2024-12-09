@@ -13,8 +13,8 @@ defineProps({
 )
 
 import ScrollingText from "../components/ScrollingText.vue";
-import Home from "../components/Home.vue";
-import Schedule from "../components/Schedule.vue";
+import Home from "../pages/Home.vue";
+import Schedule from "../pages/Schedule.vue";
 </script>
 
 <template>
@@ -153,6 +153,7 @@ section.primary-template {
       &.router-link-active {
         color: #f17a8e;
         font-weight: bold;
+        //text-decoration: 2px underline #ffffff;
       }
     }
   }
@@ -174,6 +175,7 @@ section.primary-template {
 
     button {
       background-color: white;
+      outline: unset;
       margin: 1rem;
       color: #272727;
     }

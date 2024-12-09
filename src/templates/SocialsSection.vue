@@ -1,6 +1,6 @@
 <script setup>
 
-import SocialImages from "./SocialImages.vue";
+import SocialImages from "../components/SocialImages.vue";
 </script>
 
 <template>

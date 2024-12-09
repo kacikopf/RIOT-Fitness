@@ -1,8 +1,7 @@
 <script setup>
 
-import MembershipCard from "./MembershipCard.vue";
-import GenericCard from "./GenericCard.vue";
-import GenericCardNoWidth from "./GenericCardNoWidth.vue";
+import MembershipCard from "../components/MembershipCard.vue";
+import GenericCardNoWidth from "../components/GenericCardNoWidth.vue";
 </script>
 
 <template>
@@ -29,13 +28,32 @@ import GenericCardNoWidth from "./GenericCardNoWidth.vue";
           membership-type="Full access to our gym spaces, priority booking, and bring a guest. Secure a <span>15% discount</span> with an annual commitment and enjoy flexibility for cancellations."/>
     </generic-card-no-width>
   </div>
-  <div class="membership-links">
-    <button>Learn More</button>
-    <a href="#">or <span>LEARN ABOUT OUR INCOME-ADJUSTED MEMBERSHIP</span></a>
-  </div>
+  <section class="membership-grid">
+    <picture class="membership-grid">
+      <source
+          media="(min-width: 800px)"
+          srcset="../assets/membership-grid-web.png">
+      <source
+          media="(min-width: 550px)"
+          srcset="../assets/membership-grid-tablet.png">
+      <img
+          src="../assets/membership-grid-mobile.png"
+          alt="Membership grid">
+    </picture>
+    <div class="membership-buttons">
+      <button>Join Now</button>
+      <button>Join Now</button>
+      <button>Join Now</button>
+    </div>
+  </section>
 </template>
 
 <style scoped>
+img {
+  width: 100%;
+  box-shadow: unset;
+  margin: 2rem 0 0 0;
+}
 
 h1 {
   text-align: center;
@@ -43,26 +61,31 @@ h1 {
 
 div.membership-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  gap: 1rem;
+  transform: scale(85%);
+  //gap: 1rem;
   //margin: 1rem 5rem 1rem 5rem;
-
 }
 
-div.membership-links {
+section.membership-grid {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin-top: 2rem;
 
-  a, h1, p {
-    color: #272727;
+  .membership-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 
-    span {
-      font-weight: bold;
-      text-decoration: underline;
+  .membership-grid {
+    img {
+      width: 90%;
     }
   }
 }
@@ -70,13 +93,38 @@ div.membership-links {
 @media screen and (width > 700px) {
   div.membership-card {
     flex-direction: row;
+    gap: 3rem;
+  }
+
+  section.membership-grid {
+    .membership-buttons {
+      button {
+        width: 300px;
+        margin-bottom: 5rem;
+      }
+    }
   }
 }
-
 @media screen and (width > 1200px) {
   div.membership-card {
     flex-direction: row;
     gap: 5rem;
+  }
+
+  section.membership-grid {
+    .membership-buttons {
+      width: 80%;
+
+      button {
+        width: 500px;
+      }
+    }
+
+    .membership-grid {
+      img {
+        width: 80%;
+      }
+    }
   }
 }
 </style>

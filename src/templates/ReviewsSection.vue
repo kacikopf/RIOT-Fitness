@@ -1,6 +1,6 @@
 <script setup>
 
-import ReviewCard from "./ReviewCard.vue";
+import ReviewCard from "../components/ReviewCard.vue";
 import reviews_data from "../reviews_data.js";
 
 const reviews = reviews_data.data

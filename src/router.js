@@ -1,8 +1,8 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import Home from "./components/Home.vue";
-import About from "./components/About.vue";
-import Schedule from "./components/Schedule.vue";
-import Membership from "./components/Membership.vue";
+import Home from "./pages/Home.vue";
+import About from "./pages/About.vue";
+import Schedule from "./pages/Schedule.vue";
+import Membership from "./pages/Membership.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),

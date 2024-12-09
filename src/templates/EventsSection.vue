@@ -70,6 +70,7 @@
 
 <style scoped>
 section.events {
+  margin: 1rem 5rem 1rem 5rem;
   text-align: center;
 
   div.left-box {

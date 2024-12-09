@@ -1,6 +1,6 @@
 <script setup>
 import trainerData from "../trainer_data.js";
-import TrainerCard from "./TrainerCard.vue";
+import TrainerCard from "../components/TrainerCard.vue";
 </script>
 
 <template>

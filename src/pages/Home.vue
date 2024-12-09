@@ -2,18 +2,18 @@
 
 
 import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
-import MembershipCard from "./MembershipCard.vue";
-import GenericCard from "./GenericCard.vue";
-import ScrollingText from "./ScrollingText.vue";
-import WhyRiot from "./WhyRiot.vue";
-import TrainerCard from "./TrainerCard.vue";
+import MembershipCard from "../components/MembershipCard.vue";
+import GenericCard from "../components/GenericCard.vue";
+import ScrollingText from "../components/ScrollingText.vue";
+import WhyRiot from "../templates/WhyRiot.vue";
+import TrainerCard from "../components/TrainerCard.vue";
 import trainerData from '/src/trainer_data.js';
-import SocialImages from "./SocialImages.vue";
-import ReviewsSection from "./ReviewsSection.vue";
-import HomeAbout from "./HomeAbout.vue";
-import MembershipSection from "./MembershipSection.vue";
-import TrainersSection from "./TrainersSection.vue";
-import SocialsSection from "./SocialsSection.vue";
+import SocialImages from "../components/SocialImages.vue";
+import ReviewsSection from "../templates/ReviewsSection.vue";
+import HomeAbout from "../templates/HomeAbout.vue";
+import MembershipSection from "../templates/MembershipSection.vue";
+import TrainersSection from "../templates/TrainersSection.vue";
+import SocialsSection from "../templates/SocialsSection.vue";
 
 </script>
 

@@ -320,6 +320,7 @@ section.primary-template {
       button {
         width: 250px;
         float: right;
+        margin: 1rem 0 1rem 1rem;
       }
     }
 

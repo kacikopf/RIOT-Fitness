@@ -14,7 +14,7 @@ import ContactForm from "../components/ContactForm.vue";
 
 <style scoped>
 section.page-guts {
-  margin: 0 5rem 0 5rem;
+  margin: 0 3rem 0 3rem;
   padding: 1rem 0 1rem 0;
 }
 
@@ -22,7 +22,6 @@ section.page-guts {
 
   section.page-guts {
     margin: 2rem 10rem 2rem 10rem;
-    //padding: 2rem;
   }
 }
 </style>

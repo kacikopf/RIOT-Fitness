@@ -18,11 +18,19 @@
         </div>
       </div>
       <div class="row">
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+        </div>
+      </div>
+      <div class="row">
         <div class="subject">
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         </div>
       </div>
+      <input type="checkbox" id="tour" name="tour" value="tour">
+      <label for="tour"> I would like a tour of RIOT Fitness </label>
       <div class="input row">
         <input type="submit" value="Submit">
       </div>
@@ -44,7 +52,7 @@ input[type=text], select, textarea{
 label {
   font-family: "Azo Sans", Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: clamp(.5em, 5vw, 1.2em);
+  font-size: clamp(.5em, 5vw, 1em);
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
@@ -58,14 +66,14 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  width: 40%;
+  width: 65%;
   margin-top: 1rem;
   display: block;
 }
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #FFF2F4;
   padding: 20px;
 }
 
@@ -77,6 +85,12 @@ div.input {
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (width > 700px) {
+  input[type=submit] {
+    width: 40%
+  }
 }
 
 @media screen and (width > 1200px) {

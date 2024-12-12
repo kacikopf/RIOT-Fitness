@@ -1,5 +1,5 @@
-# Vue 3 + Vite
+# RIOT Fitness
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This repository contains all of the files and code for the website RIOT Fitness. It is fully responsive at mobile, tablet and web viewports.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Not all of the buttons are active as it is still a prototype website.

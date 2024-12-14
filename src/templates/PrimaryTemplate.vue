@@ -32,8 +32,8 @@ import Schedule from "../pages/Schedule.vue";
           <router-link :to="{ name: 'Home' } "><h1>RIOT FITNESS</h1></router-link>
           <span class="nav">
             <router-link :to="{ name: 'About' }">About</router-link>
-            <router-link :to="{ name: 'Schedule' }">Schedule</router-link>
-            <router-link :to="{ name: 'Membership' }">Membership</router-link>
+            <router-link :to="{ name: 'Schedule' }">Events & Classes</router-link>
+            <router-link :to="{ name: 'Membership' }">Memberships</router-link>
             <router-link :to="{name: 'Contact'}">Contact</router-link>
           </span>
         </div>

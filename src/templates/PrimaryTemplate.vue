@@ -111,10 +111,10 @@ import Schedule from "../pages/Schedule.vue";
         <p>Join our newsletter to stay up to date on RIOT Fitness news and events.</p>
       </aside>
       <div class="nav">
-        <a href="#">Careers</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Book a Tour</a>
-        <a href="#">Schedule</a>
+        <a>Careers</a>
+        <router-link :to="{name: 'Contact'}">Contact Us</router-link>
+        <router-link :to="{name: 'Contact'}">Book a Tour</router-link>
+        <router-link :to="{ name: 'Schedule' }">Schedule</router-link>
       </div>
     </footer>
     <section class="copyright">
@@ -192,7 +192,7 @@ section.primary-template {
     color: black;
     display: flex;
     flex-direction: column;
-    padding: 1rem 7rem 1rem 7rem;
+    margin: 1rem 7rem 1rem 7rem;
 
     aside {
 
@@ -328,6 +328,7 @@ section.primary-template {
       flex-direction: row;
       justify-content: space-between;
 
+
       input {
         width: 400px;
       }
@@ -342,7 +343,7 @@ section.primary-template {
 
       a {
         text-align: right;
-        margin-right: 4rem;
+        //margin-right: 2rem;
         align-items: unset;
       }
 
@@ -352,6 +353,11 @@ section.primary-template {
 
       .nav {
         padding: 2rem 0 2rem 0;
+
+        a {
+          align-items: flex-end;
+
+        }
       }
     }
 

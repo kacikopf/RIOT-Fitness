@@ -23,7 +23,9 @@
 
       <h2>Have questions?</h2>
       <p>Give us a call or schedule an appointment to speak with a membership advisor today.</p>
-      <button>Book a Tour</button>
+      <router-link :to="{name: 'Contact'}">
+        <button>Book a Tour</button>
+      </router-link>
     </aside>
     <div class="image">
       <img src="../assets/boxing%20woman.jpg" alt="Woman boxing on a bag"/>

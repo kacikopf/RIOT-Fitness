@@ -4,11 +4,12 @@ import About from "./pages/About.vue";
 import Schedule from "./pages/Schedule.vue";
 import Membership from "./pages/Membership.vue";
 import Contact from "./pages/Contact.vue";
+import FlexFitAbout from "./templates/FlexFitAbout.vue";
+import FlexFitMembership from "./templates/FlexFitMembership.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
-        // your routes go here
         {
             path: '/home',
             name: 'Home',
@@ -34,7 +35,10 @@ const router = createRouter({
             name: 'Contact',
             component: Contact
         }
-    ]
+    ],
+    scrollBehavior() {
+        return { top: 0, left: 0 }
+    }
 })
 
 export default router

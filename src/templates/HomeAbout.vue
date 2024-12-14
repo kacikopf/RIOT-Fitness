@@ -8,7 +8,8 @@
       <h1>WE RIOT</h1>
       <p>Join us in sculpting a fitness journey where women lead the way, and everyone finds their power. Welcome to
         RIOT Fitness, where strength knows no boundaries.</p>
-      <button>About Us</button>
+      <router-link :to="{ name: 'About' }"> <button>About Us</button> </router-link>
+
     </aside>
     <div class="image">
       <img src="../assets/gym-space.jpg" alt="RIOT Gym Space"/>

@@ -3,6 +3,7 @@
 import MembershipCard from "../components/MembershipCard.vue";
 import GenericCard from "../components/GenericCard.vue";
 import GenericCardNoWidth from "../components/GenericCardNoWidth.vue";
+import Membership from "../pages/Membership.vue";
 </script>
 
 <template>
@@ -30,8 +31,10 @@ import GenericCardNoWidth from "../components/GenericCardNoWidth.vue";
     </generic-card-no-width>
   </div>
   <div class="membership-links">
+    <router-link :to="{name: 'Membership' }">
     <button>Learn More</button>
-    <a href="#">or <span>LEARN ABOUT OUR INCOME-ADJUSTED MEMBERSHIP</span></a>
+    </router-link>
+    <router-link :to="{name: 'Membership' }">or <span>LEARN ABOUT OUR INCOME-ADJUSTED MEMBERSHIP</span></router-link>
   </div>
 </template>
 

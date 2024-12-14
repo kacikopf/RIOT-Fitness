@@ -4,6 +4,8 @@
 
 <template>
   <div class="container">
+    <h1>We hear you!</h1>
+    <p><span>Ask questions, share thoughts, or request your tour today.</span> We usually respond within 1-3 business days!</p>
     <form>
       <div class="row">
         <div class="fname">
@@ -30,7 +32,7 @@
         </div>
       </div>
       <input type="checkbox" id="tour" name="tour" value="tour">
-      <label for="tour"> I would like a tour of RIOT Fitness </label>
+      <label for="tour"> I would like a tour of RIOT Fitness! </label>
       <div class="input row">
         <input type="submit" value="Submit">
       </div>
@@ -73,8 +75,16 @@ input[type=submit] {
 
 .container {
   border-radius: 5px;
-  background-color: #FFF2F4;
+  background-color: #f3f3f3;
   padding: 20px;
+
+  h1, p {
+    text-align: center;
+
+    span {
+      font-weight: bold;
+    }
+  }
 }
 
 div.input {

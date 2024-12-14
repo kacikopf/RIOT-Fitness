@@ -10,19 +10,19 @@
       <div class="row">
         <div class="fname">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
         </div>
       </div>
       <div class="row">
         <div class="lname">
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
         </div>
       </div>
       <div class="row">
         <div class="email">
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email..">
+          <input type="text" id="email" name="email" placeholder="Your email.." required>
         </div>
       </div>
       <div class="row">

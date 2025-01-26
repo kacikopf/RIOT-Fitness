@@ -14,7 +14,6 @@ import HomeAbout from "../templates/HomeAbout.vue";
 import MembershipSection from "../templates/MembershipSection.vue";
 import TrainersSection from "../templates/TrainersSection.vue";
 import SocialsSection from "../templates/SocialsSection.vue";
-
 </script>
 
 <template>

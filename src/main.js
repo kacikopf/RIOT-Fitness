@@ -1,3 +1,5 @@
+import vue from '@vitejs/plugin-vue'
+
 import { createApp } from 'vue'
 import './stylesheet.css'
 import router from './router'
